@@ -25,11 +25,11 @@ To make tweaks to the template, checkout the `template` branch.
 7. Tweak `dev.exs` to use the correct postgres credentials
 ```elixir
 config :hello, Hello.Repo,
-  username: System.get_env("PGUSER"),
-  password: System.get_env("PGPASSWORD"),
-  database: System.get_env("PGDATABASE"),
-  hostname: System.get_env("PGHOST"),
-  port: System.get_env("PGPORT"),
+  username: System.get_env("POSTGRES_USER"),
+  password: System.get_env("POSTGRES_PASSWORD"),
+  database: System.get_env("POSTGRES_DATABASE"),
+  hostname: System.get_env("POSTGRES_HOST"),
+  port: System.get_env("POSTGRES_PORT"),
 ```
 8. Tweak `dev.exs` to bind to 0.0.0.0
 ```elixir
@@ -42,6 +42,7 @@ config :hello, AppWeb.Endpoint,
 .elixir_ls
 tags
 ```
+10. Run `docker-compose build` to rebuild the image
 
 
 ## Changing the version of Elixir
