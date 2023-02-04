@@ -4,7 +4,7 @@ Template to quickly start a Phoenix project using Docker.
 
 # Quickstart
 1. Create a new repository by "using this template"
-2. Run `docker-compose run --service-ports --rm app mix deps.get`
+2. Run `docker-compose run --service-ports --rm app mix deps.get && mix deps.compile`
 3. Open devcontainer in vscode or run `docker-compose up` to start the server
 4. Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
