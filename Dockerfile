@@ -20,4 +20,4 @@ WORKDIR $APP_HOME
 
 EXPOSE 4000
 
-CMD ["/app/entrypoint.sh"]
+# CMD ["/app/entrypoint.sh"]
