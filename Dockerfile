@@ -1,4 +1,4 @@
-FROM elixir:1.14.1-alpine
+FROM elixir:1.14-alpine
 
 # Build args
 ARG PHOENIX_VERSION=1.6.15
