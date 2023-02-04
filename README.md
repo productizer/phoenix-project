@@ -53,4 +53,4 @@ tags
 
 ## Changing the version of Postgres
 
-1. Update the image the `docker-comose.yml` to the desired version
+1. Update the image the `docker-compose.yml` to the desired version
